@@ -6,50 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Music Player Challenge" />
     <meta name="keywords" content="music, player, challenge, devChallenges" />
-    <meta name="author" content="Your Name Here" />
+    <meta name="author" content="Fuadbla008" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha384-1y6j8d7e5e8f7b8c6d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s"
       crossorigin="anonymous"/>
 
-    <title>Music Player | devChallenges.io</title>
+      <link rel="stylesheet" href="./style.css" />
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <title>Music Player</title>
 
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
   </head>
   <body>
-    <!-- 
+ 
 
-  Lost in the City Lights
-  
-  Cosmo Sheldrake
 
-  Forest Lullaby
-  
-  Lesfm
-  -->
+    <div class="container">
+      <div class="music-player">
+        <div class="player-controls">
+          <audio src="./resources/lost-in-city-lights-145038.mp3 "class="audio">lost-in-city-lights-145038</audio>
+          <audio src="./resources/forest-lullaby-110624.mp3" controls class="audio"> forest-lullaby-110624</audio>
+          <button class="play-button"><i class="fas fa-play"></i> play</button>
+          <button class="pause-button"><i class="fas fa-pause"></i> pause</button>
+          <button class="next-button"><i class="fas fa-forward"></i>next</button>
+          <button class="prev-button"><i class="fas fa-backward"></i> prev</button>
+        </div>
+        <div class="track-info">
+          <h2>Track Title</h2>
+          <p>Artist Name</p>
+        </div>
+        <div class="volume-control">
+          <input type="range" min="0" max="100" value="50" />
+        </div>
+      </div>
+
 
     <div class="author-info">
       Coded by <a href="#">Your Name Here</a> | Challenge by
@@ -57,5 +48,7 @@
         >devChallenges.io</a
       >.
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
