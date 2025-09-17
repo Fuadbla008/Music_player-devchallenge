@@ -19,28 +19,40 @@
 
   </head>
   <body>
- 
-
-
     <div class="container">
       <div class="music-player">
-        <div class="player-controls">
-          <audio src="./resources/lost-in-city-lights-145038.mp3 "class="audio">lost-in-city-lights-145038</audio>
-          <audio src="./resources/forest-lullaby-110624.mp3" controls class="audio"> forest-lullaby-110624</audio>
-          <button class="play-button"><i class="fas fa-play"></i> play</button>
-          <button class="pause-button"><i class="fas fa-pause"></i> pause</button>
-          <button class="next-button"><i class="fas fa-forward"></i>next</button>
-          <button class="prev-button"><i class="fas fa-backward"></i> prev</button>
-        </div>
+        <h1>Music Player</h1>
+        <img src="" alt="Album Cover" class="album-cover" />
         <div class="track-info">
-          <h2>Track Title</h2>
-          <p>Artist Name</p>
+          <h2 class="track-title">Track Title</h2>
+          <p class="artist-name">Artist Name</p>
         </div>
+
+        <audio class="audio"></audio>
+
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+        <div class="time-container">
+          <span class="current-time">0:00</span>
+          <span class="duration">0:00</span>
+        </div>
+
+        <div class="player-controls">
+          <button class="shuffle-button"><i class="fas fa-random"></i></button>
+          <button class="prev-button"><i class="fas fa-backward"></i></button>
+          <button class="play-pause-button"><i class="fas fa-play"></i></button>
+          <button class="next-button"><i class="fas fa-forward"></i></button>
+          <button class="repeat-button"><i class="fas fa-redo"></i></button>
+        </div>
+        
         <div class="volume-control">
-          <input type="range" min="0" max="100" value="50" />
+          <i class="fas fa-volume-down"></i>
+          <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5" />
+          <i class="fas fa-volume-up"></i>
         </div>
       </div>
-
+    </div>
 
     <div class="author-info">
       Coded by <a href="#">Your Name Here</a> | Challenge by
